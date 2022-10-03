@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Phase 2 project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Dream Dusk**, your ecommerce hotspot for a neurodivergent
 
-## Available Scripts
 
-In the project directory, you can run:
+![checkpoint demo]
 
-### `npm start`
+Here's the scenario: do online shopping without being bombbarded by excessive information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After unbundling the project:
 
-### `npm run build`
+1. Run `npm install` in your terminal.
+2. Run `npm run server`. This will run your backend on port `insert port`.
+3. In a new terminal, run `npm start`. This will run your React app on port `insert port`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Make sure to open [insert local host points](insert local host points) in
+the browser to verify that your backend is working before you proceed!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The base URL for your backend is: `insert json url`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## User Stories
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+As a user, I should be able to:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Endpoints for User Stories
 
-## Learn More
+#### GET /"products-change to appropritae"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Example Response:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```json
+[
+  {
+    "id": 177,
+    "brand": "maybelline",
+    "name": "Maybelline Line Stiletto Ultimate Precision Liquid Eyeliner",
+    "price": "10.29",
+    "price_sign": null,
+    "currency": null,
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/350d6c6c2fa3add8ee40189cd19bfe0a_ra,w158,h184_pa,w158,h184.png",
+    "product_link": "https://well.ca/products/maybelline-line-stiletto-ultimate_17295.html",
+    "website_link": "https://well.ca",
+    "description": "Easily Creates Slender Lines\n\n    Rich, Even Color\n    All-Day Wear\n    Smooth Glide Felt Tip\n    Flexible tip guides on smoothly for the most precise control.\n    All-day wear up to 8 hours\n",
+    "rating": 4.0,
+    "category": "liquid",
+    "product_type": "eyeliner",
+    "tag_list": [
+      
+    ],
+    "created_at": "2016-10-01T18:27:50.155Z",
+    "updated_at": "2017-12-23T20:51:16.164Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/177.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/177/original/open-uri20171223-4-p0eowt?1514062276",
+    "product_colors": [
+      {
+        "hex_value": "#000000",
+        "colour_name": "Blackest Black "
+      },
+      {
+        "hex_value": "#4E2F2F",
+        "colour_name": "Brown Black "
+      }
+    ]
+  },
+]
+```
 
-### Code Splitting
+#### DELETE /products-insert appropriate/:id
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Example Response:
 
-### Analyzing the Bundle Size
+```json
+{}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Full demo]`.
